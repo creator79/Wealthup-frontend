@@ -15,7 +15,7 @@ const page: React.FC<PageProps> = () => {
     const handleRefreshCode = async (e: { preventDefault: () => void; }) => {
         try {
             e.preventDefault();
-            const response = await fetch('http://localhost:8000/api/v1/codes');
+            const response = await fetch('https://wealthup-backend-b4ez.onrender.com/api/v1/codes');
             const data = await response.json();
 
             // Assuming the API response has a "code" property
@@ -28,7 +28,7 @@ const page: React.FC<PageProps> = () => {
     const handleCheckCode = async (e: { preventDefault: () => void; }) => {
         try {
             e.preventDefault();
-            const response = await fetch('http://localhost:8000/api/v1/codes/use', {
+            const response = await fetch('https://wealthup-backend-b4ez.onrender.com/api/v1/codes/use', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
