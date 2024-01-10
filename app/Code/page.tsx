@@ -99,7 +99,7 @@ const page: React.FC<PageProps> = () => {
                         <textarea
                             id="editor"
                             rows={8}
-                            className=" flex-1 mx-auto text-center mt-[7rem] block w-full px-0 text-sm text-white text-2xl border-0 dark:bg-gray-800 focus:ring-0 dark:text-white dark:placeholder-gray-400 font-bold"
+                            className=" flex-1 mx-auto text-center mt-[7rem] block w-full px-0  text-white text-2xl border-0 dark:bg-gray-800 focus:ring-0 dark:text-white dark:placeholder-gray-400 font-bold"
                             disabled={true}
                             value={tokenCode}
                         />
@@ -141,7 +141,7 @@ const page: React.FC<PageProps> = () => {
             </button>
 
 
-            <div className='flex-1 mx-auto text-center font-serif text-xs '>
+            <div className='flex-1 mx-auto text-center font-serif text-xl '>
                 {successMessage && <div className="text-green-600">{successMessage}</div>}
                 {errorMessage && <div className="text-red-600">{errorMessage}</div>}
 
